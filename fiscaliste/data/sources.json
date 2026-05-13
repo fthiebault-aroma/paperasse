@@ -20,13 +20,13 @@
       "name": "PFU et prélèvements sociaux",
       "file": "pfu-prelevements-sociaux.json",
       "annee_revenus": 2025,
-      "source_officielle": "LFSS 2026 (PS 18,6% à compter 2026) — revenus 2025 restent à 17,2%",
-      "article_cgi": "art. 200 A CGI, art. L. 136-1 CSS",
+      "source_officielle": "LFSS 2026 (loi n° 2025-1403 du 30/12/2025, art. 12) — différenciation L. 136-6 (revenus du patrimoine, PS 18,6 % dès 2025) vs L. 136-7 (produits de placement, PS 17,2 % en 2025, 18,6 % à compter du 01/01/2026)",
+      "article_cgi": "art. 200 A CGI, art. L. 136-6 et L. 136-7 CSS",
       "bofip": "BOI-RPPM-RCM-30",
       "update_frequency": "annual",
-      "last_fetched": "2026-04-12",
+      "last_fetched": "2026-05-13",
       "next_check": "2026-12-30",
-      "check_instructions": "Vérifier CSG/CRDS/prélèvement solidarité. Attention au décalage LFSS N vs encaissement."
+      "check_instructions": "Vérifier CSG/CRDS/prélèvement solidarité. Attention à la différenciation revenus du patrimoine vs produits de placement (deux dates d'entrée en vigueur depuis LFSS 2026)."
     },
     {
       "id": "per-plafonds",

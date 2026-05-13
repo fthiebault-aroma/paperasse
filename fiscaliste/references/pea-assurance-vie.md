@@ -31,7 +31,10 @@ Les plafonds concernent les **versements**, pas la valeur du plan. Un plan peut 
 
 - **Retraits libres** sans clôture du plan
 - **EXONÉRATION TOTALE d'IR** sur les gains
-- **Prélèvements sociaux 17,2%** dus sur les gains à chaque retrait
+- **Prélèvements sociaux** dus sur les gains à chaque retrait, au taux applicable à la date du retrait :
+  - **Retraits avant le 01/01/2026** : 17,2 %
+  - **Retraits à partir du 01/01/2026** : **18,6 %** (LFSS 2026, art. 12, modifiant L. 136-7 CSS) — applicable sur la **totalité du gain au retrait**, y compris la fraction acquise avant 2026
+- Référence : les gains PEA sont qualifiés de "produits de placement" (PS prélevés à la source au moment du retrait), pas de "revenus du patrimoine"
 
 ### Taux historiques PS
 
@@ -50,7 +53,7 @@ Les gains acquis avant certaines dates peuvent bénéficier de taux PS historiqu
 | Critère | PEA | AV |
 |---------|-----|-----|
 | Exonération IR | **Oui** après 5 ans | Non (abattement seulement) |
-| PS sur gains | 17,2% à chaque retrait | 17,2% PFU ou barème |
+| PS sur gains | 17,2 % puis 18,6 % à partir du 01/01/2026, à chaque retrait | 17,2 % inchangé (cas exclu de la hausse LFSS 2026) |
 | Composition | Actions EUR uniquement | Libre (actions, obligations, fonds €) |
 | Retrait avant échéance | Clôture avant 5 ans | Libre à tout moment |
 | Transmission | Dans succession classique | Régime spécifique (voir notaire) |

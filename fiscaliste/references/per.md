@@ -84,7 +84,9 @@ Les époux/pacsés soumis à imposition commune peuvent **mutualiser leurs plafo
 
 2. **Sortie en capital**
    - **Versements déduits à l'entrée** : imposés au barème progressif (part capital)
-   - **Gains** : imposés séparément au PFU 30%
+   - **Gains** : imposés séparément au PFU (12,8 % IR + PS), les gains PER étant qualifiés de "produits de placement" (L. 136-7 CSS) :
+     - **Sortie avant le 01/01/2026** : PFU 30 % (PS 17,2 %)
+     - **Sortie à partir du 01/01/2026** : PFU 31,4 % (PS 18,6 %, LFSS 2026)
    - Possibilité de fractionner la sortie sur plusieurs années (à demander à l'assureur)
 
 **Piège sortie capital** : ne pas confondre le régime du capital (barème, écrase la tranche) et celui des gains (PFU fixe). Bien distinguer.
@@ -93,7 +95,7 @@ Les époux/pacsés soumis à imposition commune peuvent **mutualiser leurs plafo
 
 Si l'on a choisi de ne pas déduire les versements (case à cocher à la souscription) :
 - Sortie partiellement exonérée
-- Seuls les gains sont imposés (PFU)
+- Seuls les gains sont imposés au PFU (30 % avant 01/01/2026, 31,4 % à partir du 01/01/2026 — voir taux PS PER ci-dessus)
 - Utile si on anticipe un TMI sortie > TMI entrée — rare
 
 ### Sortie anticipée autorisée

@@ -16,7 +16,8 @@ Voir `data/equity-salarial.json` pour les taux et seuils.
 
 **2. Plus-value de cession**
 - Valeur de cession − valeur au vesting
-- **Imposition : PV mobilière** (PFU 30% ou barème)
+- **Imposition : PV mobilière** : PFU à **31,4 % pour les cessions réalisées dès 2025** (12,8 % IR + 18,6 % PS, LFSS 2026), ou barème sur option
+- Les PV mobilières sont des "revenus du patrimoine" (art. L. 136-6 CSS), donc soumises au taux PS 18,6 % dès les revenus 2025
 - Uniquement si cession après vesting
 
 ### Plans qualifiants (loi Macron)
@@ -69,10 +70,12 @@ Toujours consulter le plan pour déterminer le régime applicable.
 
 Voir `data/equity-salarial.json` → `bspce.gain_cession`.
 
-| Ancienneté dans la société à la date de cession | Taux global |
+| Ancienneté dans la société à la date de cession | Taux global pour cessions 2025 |
 |--------------------------------------------------|-------------|
-| **≥ 3 ans** | 30% (12,8% IR + 17,2% PS) |
-| **< 3 ans** | 50% (30% IR + 20% PS) |
+| **≥ 3 ans** | **31,4 %** (12,8 % IR + 18,6 % PS) — PV mobilière |
+| **< 3 ans** | 50 % (30 % IR + 20 % PS — contribution salariale spécifique) |
+
+Note : pour les cessions ≥ 3 ans, le PS suit le taux applicable aux PV mobilières (revenus du patrimoine, L. 136-6 CSS), soit 18,6 % dès 2025. Pour les cessions < 3 ans, la part PS reste à 20 % (contribution salariale spécifique, distincte du PS de droit commun).
 
 La pénalité pour départ précoce (< 3 ans) est forte. À intégrer dans les décisions de départ.
 

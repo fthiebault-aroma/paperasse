@@ -78,7 +78,7 @@ Dans cet exemple, peu de gain car le revenu ordinaire est déjà en tranche 30%.
 
 ## CEHR (Contribution Exceptionnelle Hauts Revenus)
 
-Voir `data/bareme-ir-2025.json` → `cehr`.
+Voir `data/bareme-ir-2025.json` → `cehr`. Base légale : art. 223 sexies CGI.
 
 ### Seuils (revenus 2025)
 
@@ -93,6 +93,56 @@ Voir `data/bareme-ir-2025.json` → `cehr`.
 
 - S'ajoute à l'IR net (ne se déduit pas)
 - Lissage possible sur la moyenne des 2 années précédentes (article 223 sexies CGI)
+
+## CDHR (Contribution Différentielle sur les Hauts Revenus)
+
+Voir `data/bareme-ir-2025.json` → `cdhr`.
+
+Mécanisme **distinct de la CEHR** : impose un **plancher d'imposition à 20 %** sur les foyers à hauts RFR. À ne jamais confondre avec la CEHR (les deux peuvent s'appliquer simultanément sur un même foyer).
+
+### Base légale
+
+- Art. 224 CGI, créé par l'**art. 10 de la LFI 2025** (loi n° 2025-127 du 14/02/2025)
+- **Pérennisée par la LFI 2026** jusqu'au retour du déficit public sous 3 % du PIB (donc applicable aux revenus 2025+ jusqu'à condition de fin)
+
+### Seuils RFR
+
+| Situation | Seuil de déclenchement |
+|---|---|
+| Célibataire, veuf, séparé, divorcé | RFR > 250 000 € |
+| Couple marié ou pacsé (imposition commune) | RFR > 500 000 € |
+
+### Mécanisme
+
+La CDHR s'applique lorsque le **taux moyen d'imposition** (IR + CEHR, après réductions et crédits d'impôt) reste **inférieur à 20 % du RFR retraité**. Elle vient combler la différence pour atteindre ce plancher de 20 %.
+
+Calcul automatique par l'administration après dépôt de la 2042. Pas de case spécifique à remplir manuellement.
+
+### Distinction CEHR vs CDHR
+
+| Critère | CEHR (art. 223 sexies CGI) | CDHR (art. 224 CGI) |
+|---|---|---|
+| Nature | Surtaxe additionnelle | Plancher d'imposition |
+| Taux | 3 % à 4 % selon tranche RFR | 0 à 20 % selon écart au plancher |
+| Mode de calcul | Direct sur le RFR | Différentiel (complète si IR + CEHR < 20 % RFR) |
+| Application | Tous les foyers > seuils | Uniquement si IR effectif < 20 % du RFR |
+
+Les deux peuvent s'appliquer simultanément : la CEHR est toujours due au-delà des seuils, la CDHR ne se déclenche qu'en cas de fort poids des revenus PFU (faiblement imposés à 12,8 % IR).
+
+### Calendrier
+
+- **Acompte** : 95 % du montant estimé à verser entre le **1er et le 15 décembre** de l'année des revenus, via le service "Prélèvement à la source" sur impots.gouv.fr
+- **Solde** : calculé automatiquement par l'administration après dépôt de la 2042 au printemps suivant
+
+### Cas typiques touchés
+
+- Dirigeants à fort revenu PFU dividendes (TMI effectif IR ~12,8 % alors que RFR > 250 k€)
+- Business angels avec PV mobilières importantes
+- Cadres exécutifs à fort RSU/BSPCE l'année de vesting/cession
+
+### Source officielle
+
+[impots.gouv.fr — Contribution Différentielle sur les Hauts Revenus](https://www.impots.gouv.fr/actualite/contribution-differentielle-sur-les-hauts-revenus-cdhr)
 
 ## Revenus étrangers et conventions fiscales
 
