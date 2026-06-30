@@ -36,7 +36,7 @@
       "description": "Gestion complète de copropriété, AG, appels de fonds, comptabilité, travaux, contentieux"
     }
   ],
-  "integrations": ["qonto", "stripe"],
+  "integrations": ["qonto", "stripe", "dolibarr"],
   "language": "fr",
   "country": "FR"
 }

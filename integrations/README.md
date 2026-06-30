@@ -8,6 +8,7 @@ Connecteurs pour récupérer automatiquement les transactions bancaires et les o
 |------------|-------------|-------------------|
 | [Qonto](qonto/) | Transactions bancaires via l'API Qonto | `QONTO_ID`, `QONTO_API_SECRET` |
 | [Stripe](stripe/) | Charges, payouts, fees via l'API Stripe | Variable par compte (configurable) |
+| [Dolibarr](dolibarr/) | Écritures comptables du grand livre via l'API Dolibarr → génère `data/journal-entries.json` pour le bilan et compte de résultat | `DOLAPIKEY`, `DOLIBARR_URL` |
 
 ## Configuration
 
@@ -63,6 +64,23 @@ Tous les sous-comptes peuvent partager la même clé plateforme (`env_key`). Le 
 
 Vous pouvez mixer les deux modes (comptes séparés + Connect) dans le même tableau.
 
+### Dolibarr
+
+1. Dans votre Dolibarr : **Accueil > Réglages > Sécurité > Accès aux services web/API** — activez l'API REST et copiez votre clé API
+2. Assurez-vous que vos écritures sont saisies dans le module **Comptabilité > Grand livre**
+3. Définissez les variables d'environnement :
+   ```bash
+   export DOLAPIKEY="votre-cle-api"
+   export DOLIBARR_URL="https://dolibarr.example.com"
+   ```
+4. Optionnellement, ajoutez dans `company.json` :
+   ```json
+   "dolibarr": {
+     "url": "https://dolibarr.example.com"
+   }
+   ```
+   (Si `DOLIBARR_URL` n'est pas défini en variable d'environnement, l'URL est lue ici.)
+
 ## Usage
 
 ```bash
@@ -77,6 +95,16 @@ npm run fetch:stripe
 
 # Stripe : filtrer par date et compte
 node integrations/stripe/fetch.js --start 2025-01-01 --end 2025-12-31 --account main
+
+# Dolibarr : récupérer les écritures (période fiscale de company.json)
+node integrations/dolibarr/fetch.js
+
+# Dolibarr : filtrer par date ou année
+node integrations/dolibarr/fetch.js --start 2025-01-01 --end 2025-12-31
+node integrations/dolibarr/fetch.js --year 2025
+
+# Générer bilan + compte de résultat après le fetch Dolibarr
+node scripts/generate-statements.js
 
 # Tout récupérer
 npm run fetch
